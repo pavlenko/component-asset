@@ -1,0 +1,16 @@
+/*this is local stylesheet*/
+@import '/global.css';
+@import url(relative.css);
+@import url(http://foo.com/external.css);
+* {
+    background-image: url(dir/relative.jpg);
+}
+a {
+    background-image: url(/root.jpg);
+}
+i {
+    background-image: url(data:image/gif;base64,...);
+}
+img {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/workshop/graphics/earglobe.gif',sizingMethod='scale');
+}
